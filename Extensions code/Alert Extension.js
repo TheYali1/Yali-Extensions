@@ -9,11 +9,11 @@
       }
   
       promptText(args) {
-        return prompt(args.MESSAGE || 'הכנס טקסט כאן:');
+        return prompt(args.MESSAGE || 'Insert text here:');
       }
   
       confirmAction(args) {
-        return confirm(args.MESSAGE || 'האם אתה בטוח?');
+        return confirm(args.MESSAGE || 'are you sure?');
       }
   
       WebExt_DisplayNotification(args) {
