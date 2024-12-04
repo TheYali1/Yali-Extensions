@@ -30,6 +30,7 @@
           icon: args.URL
         });
         setTimeout(() => {
+
         }, args.DURATION * 1000);
       }
   
@@ -49,6 +50,10 @@
           menuIconURI: iconURI,
           blockIconURI: iconURI,
           blocks: [
+            {
+              blockType: "label",
+              text: "Alerts",
+            },
             {
               opcode: 'showAlert',
               blockType: Scratch.BlockType.COMMAND,
@@ -81,6 +86,10 @@
                   defaultValue: 'Are you sure?'
                 }
               }
+            },
+            {
+              blockType: "label",
+              text: "Notifications",
             },
             {
               opcode: 'WebExt_DisplayNotification',
@@ -139,4 +148,3 @@
   
     Scratch.extensions.register(new AlertExtension());
   })(Scratch);
-  
